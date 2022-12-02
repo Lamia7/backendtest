@@ -1,29 +1,34 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Ceci est un home test orienté backEnd pour le process de bruce.work
 
-### What is this repository for? ###
+## enoncé
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Le but de l'exercice est de creer une fonction qui verifie que les titres de sejour d'un candidat, couvrent bien l'ensemble de la période de la mission. c'est a dire, que pour chaque jour de la mission, il y a bien un titre de sejour qui couvre la mission
 
-### How do I get set up? ###
+La fonction appelée, sera la fonction [verify](./src/index.ts), qui prends en argument :
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+- un objet [Mission](./src/frame.ts) qui a pour propriétés dateStart et dateEnd
+- un tableau d'objets [TitreDeSejour](./src/frame.ts) qui a (aussi) pour propriétés dateStart et dateEnd
 
-### Contribution guidelines ###
+La fonction demandée devra retourner un boolean en fonction du resultat.
 
-* Writing tests
-* Code review
-* Other guidelines
+__nota__ : Les valeurs dateStart et dateEnd sont considérées 'incluses', c'est a dire que si une dateEnd est au 24 Juillet, on considère que le titre ou mission comprend cette journée.
 
-### Who do I talk to? ###
+## instructions
 
-* Repo owner or admin
-* Other community or team contact
+1. cloner ce repo
+2. `npm ci` pour installer les dépendances
+3. `npm run build` pour build le projet
+4. `npm run verify` pour lancer le test de verification
+
+
+Merci de bien vouloir nous répondre en reprenant le projet et en le commitant sur le Git de votre choix.
+
+Vous êtes libre d'utiliser n'importe quel librairie, architecture de fichier ou tout outil qui vous sera utile.
+
+Si vous n'êtes pas à l'aise avec le typescript, vous pouvez ecrire en vanillaJS votre code.
+
+A noter que les tests de verification ne couvrent pas l'ensemble des cas possible.
+
+Bonne chance.
