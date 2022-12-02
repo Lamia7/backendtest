@@ -1,29 +1,29 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Ceci est un home test orienté backEnd pour le process de bruce.work
 
-### What is this repository for? ###
+## enoncé
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Le but de l'exercice est de creer une fonction qui verfie que les titres de sejour d'un candidat, couvrent bien al période de la mission.
 
-### How do I get set up? ###
+La fonction appelée, sera la fonction [verify](./src/index.ts), qui prends en argument :
+- un objet [mission](./src/frame.ts) qui a pour propriétés dateStart et dateEnd
+- un tableau d'objets [TitreDeSejour](./src/frame.ts) qui a (aussi) pour propriétés dateStart et dateEnd
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+La fonction demandé devra retourner un boolean en fonction du resultat.
 
-### Contribution guidelines ###
+__nota__ : Les valeurs dateStart et dateEnd sont considérées 'incluses', c'est a dire que si une dateEnd est au 24 Juillet, on considère que le titre ou mission comprend cette journée.
 
-* Writing tests
-* Code review
-* Other guidelines
+## instructions
 
-### Who do I talk to? ###
+1. cloner ce repo
+2. `npm ci` pour installer les dépendances
+3. `npm run build` pour build le projet
+4. `npm run verify` pour lancer le test de verification
 
-* Repo owner or admin
-* Other community or team contact
+
+Merci de bien vouloir nous répondre en reprenant le projet et en le commitant sur le Git de votre choix.
+
+Vous êtes libre d'utiliser n'importe quel librairie, architecture de fichier ou tout outil qui vous sera utile.
+
+Si vous n'êtes pas à l'aise avec le typescript, vous pouvez ecrire en vanillaJS votre code.
