@@ -29,6 +29,6 @@ Vous êtes libre d'utiliser n'importe quel librairie, architecture de fichier ou
 
 Si vous n'êtes pas à l'aise avec le typescript, vous pouvez ecrire en vanillaJS votre code.
 
-A noter que les tests de verification ne couvrent pas l'ensemble des cas possible.
+A noter que les tests de verification ne couvrent pas l'ensemble des cas possibles.
 
 Bonne chance.
