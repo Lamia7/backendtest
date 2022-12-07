@@ -19,8 +19,8 @@ __nota__ : Les valeurs dateStart et dateEnd sont considérées 'incluses', c'est
 
 1. cloner ce repo
 2. `npm ci` pour installer les dépendances
-3. `npm run build` pour build le projet
-4. `npm run verify` pour lancer le test de verification
+3. `npm run build` pour build le projet (`npm run winbuild` on windows)
+4. `npm run verify` pour lancer le test de verification (`npm run winverify` on windows)
 
 
 Merci de bien vouloir nous répondre en reprenant le projet et en le commitant sur le Git de votre choix.
@@ -29,6 +29,6 @@ Vous êtes libre d'utiliser n'importe quel librairie, architecture de fichier ou
 
 Si vous n'êtes pas à l'aise avec le typescript, vous pouvez ecrire en vanillaJS votre code.
 
-A noter que les tests de verification ne couvrent pas l'ensemble des cas possibles.
+A noter que les tests de verification ne couvrent pas l'ensemble des cas possible.
 
 Bonne chance.
