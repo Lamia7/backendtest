@@ -1,5 +1,5 @@
 import { verify } from '../src';
-import { Mission, TitreDeSejour } from '../src/frame';
+import { Mission, TitreDeSejour } from '../src/models';
 
 const mission1: Mission = {
 	dateEnd: new Date('2022-12-05T00:00:00.000Z'),
