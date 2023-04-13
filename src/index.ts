@@ -3,13 +3,17 @@ import Utils from './utils';
 
 /**
  * Verify 'titre de sejour' validity fo the mission
- * @param mission
- * @param titres
+ * @param {Mission} mission Mission to verify
+ * @param {TitreDeSejour[]} titres 'Titre de sejour' list
+ * @returns {boolean} True if documents are valid for the mission duration, else false
  */
 export const verify = (mission: Mission, titres: TitreDeSejour[]): boolean => {
-  const missionDays = Utils.getDaysInRange(mission.dateStart, mission.dateEnd);
+  const missionDays: Date[] = Utils.getDaysInRange(
+    mission.dateStart,
+    mission.dateEnd
+  );
   for (const missionDay of missionDays) {
-    const isTitreDeSejourCovering = titres.find(
+    const isTitreDeSejourCovering: TitreDeSejour | undefined = titres.find(
       (titreDeSejour) =>
         missionDay >= titreDeSejour.dateStart &&
         missionDay <= titreDeSejour.dateEnd
